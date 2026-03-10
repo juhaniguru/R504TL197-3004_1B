@@ -20,28 +20,10 @@ class MainActivity : ComponentActivity() {
         setContent {
             R504TL1973004_1BTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
-                    )
+                    Counter(modifier = Modifier.fillMaxSize().padding(innerPadding))
                 }
             }
         }
     }
 }
 
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    R504TL1973004_1BTheme {
-        Greeting("Android")
-    }
-}
